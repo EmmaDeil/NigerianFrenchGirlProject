@@ -1,3 +1,59 @@
+/* Custom accordion item border and radius */
+.custom-accordion .accordion-item {
+  border: 1px solid #dee2e6 !important;
+  border-radius: 0.75rem !important;
+  margin-bottom: 1rem;
+  background: #fff;
+  box-shadow: none;
+}
+
+.custom-accordion .accordion-item:first-child {
+  border-top: 1px solid #dee2e6 !important;
+  border-top-left-radius: 0.75rem !important;
+  border-top-right-radius: 0.75rem !important;
+}
+
+.custom-accordion .accordion-item:last-child {
+  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom-left-radius: 0.75rem !important;
+  border-bottom-right-radius: 0.75rem !important;
+}
+
+.custom-accordion .accordion-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.custom-accordion .accordion-button {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.custom-accordion .accordion-collapse {
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+/* Custom accordion plus icon */
+.custom-accordion .accordion-button::after {
+  background-image: none !important;
+  content: '+';
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.custom-accordion .accordion-button:not(.collapsed)::after {
+  content: 'x';
+}
+
+.accordtop {
+  margin-top: 30px;
+}
+
 @import "bootstrap/dist/css/bootstrap.css";
 
 /* navagation bar */
@@ -30,4 +86,5 @@
 
 .midlevel {
   margin-bottom: 50px;
+  max-width: 600px;
 }
