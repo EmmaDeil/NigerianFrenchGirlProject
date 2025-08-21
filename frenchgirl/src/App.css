@@ -1,0 +1,33 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
+/* navagation bar */
+.topbtn {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.topbtn:hover {
+  text-decoration: underline;
+}
+
+.fmblue {
+  background-color: hsl(236.44,60.82%,38.04%);
+  text-align: center;
+  padding: 70px;
+}
+
+.startedbtn {
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-size: small;
+}
+
+
+.midlevel {
+  margin-bottom: 50px;
+}

@@ -1,0 +1,49 @@
+/* Import all of Bootstrap’s CSS */
+@import "bootstrap/dist/css/bootstrap.css";
+
+
+
+
+/* footer styling */
+.social-media-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media-links li {
+  /* display: inline; */
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.social-media-links a {
+  text-decoration: none;
+  /* color: #007bff; */
+  color: black;
+}
+
+.social-media-links a:hover {
+  text-decoration: underline;
+}
+
+.other-links {
+  list-style: none;
+  padding: 0;
+}
+
+.other-links li {
+  margin-bottom: 10px;
+}
+
+.other-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.other-links a:hover {
+  text-decoration: underline;
+}
+
+.footdiv {
+  padding: 50px 20px;
+}
