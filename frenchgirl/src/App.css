@@ -100,7 +100,32 @@
   background-color: hsl(236.44,60.82%,38.04%);
   text-align: center;
   padding: 70px;
-  border-radius: 30px;
+  border-radius: 9px;
+}
+
+.comment {
+  background-color: hsl(236.44,60.82%,38.04%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.ratediv div {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  margin: 0 20px;
+  max-width: 400px;
+}
+
+.ratediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .startedbtn {
