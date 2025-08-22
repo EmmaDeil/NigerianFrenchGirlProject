@@ -19,11 +19,18 @@ const Users = () => {
                            <p>Don't have an account yet? <a href="#">Sign Up</a></p>
                            <div className=''>
                               <label htmlFor="username">Username:</label><br />
-                              <input type="text" id="username" name="username" required />
+                              <input type="text" id="username" name="username" placeholder='Enter your username' required />
                            </div>
                            <div className=''>
+                              <div className='d-flex justify-content-between'>
                               <label htmlFor="password">Password:</label><br />
-                              <input type="password" id="password" name="password" required />
+                              <a href="#">Forgot Password?</a>
+                              </div>
+                              <input type="password" id="password" name="password" placeholder='Enter your password' required />
+                           </div>
+                           <div className='d-flex align-items-center'>
+                              <input type="checkbox" name="rememberMe" id="rememberMe" />
+                              <label htmlFor="rememberMe">Remember Me</label>
                            </div><br />
                            <button type="submit" className="btn btn-primary">Login</button>
                         </form>
