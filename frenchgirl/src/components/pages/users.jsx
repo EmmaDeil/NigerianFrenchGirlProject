@@ -11,7 +11,8 @@ const Users = () => {
             <div className="modal show d-block" tabIndex="-1" role="dialog" style={{ background: 'rgba(0,0,0,0.3)' }}>
                <div className="modal-dialog modal-dialog-centered" role="document">
                   <div className="modal-content">
-                     <div className="modal-header">
+                     <div className="modal-header bg-black text-white">
+                        {/* <img src="/character.jpg" alt="Example" className='img-fluid' /> */}
                         <h5 className="modal-title">Login Form</h5>
                      </div>
                      <div className="modal-body">

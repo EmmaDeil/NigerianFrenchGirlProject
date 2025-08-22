@@ -47,3 +47,24 @@
 .footdiv {
   padding: 50px 20px;
 }
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Optional: centers vertically if you set a height */
+  height: 100%; /* Set a specific height if needed */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  color: green;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  text-align: center;
+}

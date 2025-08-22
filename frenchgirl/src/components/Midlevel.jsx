@@ -2,6 +2,7 @@ import React from 'react'
 import Merge from './merge.jsx';
 import Header from './pages/header.jsx';
 import { useNavigate } from "react-router-dom";
+import Page2 from './pages/getin/Page2.jsx';
 
 
 const Midlevel = () => {
@@ -9,6 +10,7 @@ const Midlevel = () => {
    return (
       <div>
          <Header />
+         <Page2 />
          <div className='container midlevel'>
             <h1 className='text-center'>Frequently Asked Questions</h1>
             <p className='text-center'>Got questions? We've got answers!</p>
