@@ -1,10 +1,12 @@
 import React from 'react'
-import Merge from './inner.jsx';
+import Merge from './merge.jsx';
+import Header from './pages/header.jsx';
 
 
 const Midlevel = () => {
    return (
       <div>
+         <Header />
          <div className='container midlevel'>
             <h1 className='text-center'>Frequently Asked Questions</h1>
             <p className='text-center'>Got questions? We've got answers!</p>
