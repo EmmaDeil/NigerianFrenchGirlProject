@@ -4,6 +4,7 @@ import Header from './pages/header.jsx';
 
 
 const Midlevel = () => {
+   const navigate = useNavigate();
    return (
       <div>
          <Header />
