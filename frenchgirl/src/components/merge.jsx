@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Inner = () => {
+export const Merge = () => {
   return (
     <div>
-      <div className='container-fluid fmblue'>
+       <div className='container-fluid fmblue'>
          <h1 className='text-center text-white'>Ready to start Learning French?</h1>
          <h1 className='text-center text-white'>Join the vibrant community today and embrace the future of language education</h1>
 
@@ -13,4 +13,4 @@ const Inner = () => {
   )
 }
 
-export default Inner;
+export default Merge;

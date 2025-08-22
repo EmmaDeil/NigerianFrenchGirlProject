@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Inner from './components/Inner'
 import Midlevel from './components/Midlevel.jsx'
 
 
@@ -13,7 +12,6 @@ function App() {
     <>
       <Navbar />
       <Midlevel />
-      <Inner />
       {/* Add your routes/components here if needed */}
       <Footer />
     </>
