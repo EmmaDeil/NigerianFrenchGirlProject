@@ -203,4 +203,11 @@
   border-radius: 50px;
 }
 
+.thelist {
+  list-style: none;
+  padding: 0;
+}
 
+.thelist li {
+  padding: 15px 0;
+}

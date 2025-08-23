@@ -1,6 +1,7 @@
 import React from 'react'
 import Page0 from './Page0';
 
+
 const Page4 = () => {
    return (
       <div className='mb-2'>
@@ -40,19 +41,22 @@ const Page4 = () => {
             </div>
          </div>
 
+
       <div className='text-center' style={{backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '50px 0', borderRadius: '0', height: '500px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px'}}>
          <h1 className='text-black '><Page0 text={"Features That Enhance Your Learning Experience"}/></h1>
          </div>
+
+
          <div className='container-fluid mt-2'>
             <div className='row' style={{height: '300px', marginTop: '20px'}}>
                <div className='col-6'>
-                  <h3>Dynamic Learning Modules</h3>
-                  <ul>
-                     <li>Engaging animated lessons for kids.</li>
-                     <li>Comprehensive resources for beginners.</li>
-                     <li>Profressional-level materials for advanced learners.</li>
+                  <h3 className='' style={{marginBottom: '30px', marginTop: '10px'}}>Dynamic Learning Modules</h3>
+                  <ul className="thelist">
+                     <li><i class="bi bi-caret-right"></i>  Engaging animated lessons for kids.</li>
+                     <li><i class="bi bi-caret-right"></i>  Comprehensive resources for beginners.</li>
+                     <li><i class="bi bi-caret-right"></i>  Professional-level materials for advanced learners.</li>
                   </ul>
-                  <h1>Explore All Features <a href="#">==</a></h1>
+                  <p style={{marginBottom: '0', marginTop: '15px'}}>Explore All Features <a href="#"><i className="bi bi-arrow-right"></i></a></p>
                </div>
                <div className='col-6'>
                   <img src="/img4.avif" alt="" style={{height: '300px', width: '600px', borderRadius: '20px'}} />
@@ -63,16 +67,24 @@ const Page4 = () => {
                   <img src="/img5.avif" alt="" style={{height: '300px', width: '600px', borderRadius: '20px'}} />
                </div>
                <div className='col-6'>
-                  <h3>AI-Powered Tools</h3>
-                  <ul>
-                     <li>Context Translator for personalized learning.</li>
-                     <li>Voice-to-Voice Translation for real conversations.</li>
-                     <li>Progress tracking for both kids and parents.</li>
+                  <h3 className='' style={{marginBottom: '30px', marginTop: '10px'}}>AI-Powered Tools</h3>
+                  <ul className='thelist'>
+                     <li><i className="bi bi-caret-right"></i>  Context Translator for personalized learning.</li>
+                     <li><i className="bi bi-caret-right"></i>  Voice-to-Voice Translation for real conversations.</li>
+                     <li><i className="bi bi-caret-right"></i>  Progress tracking for both kids and parents.</li>
                   </ul>
-                  <h1>Explore All Features <a href="#">==</a></h1>
+                  <p style={{marginBottom: '0', marginTop: '15px'}}>Explore All Features <a href="#"><i className="bi bi-arrow-right"></i></a></p>
                </div>
             </div>
             </div>
+
+            <div className='text-center' style={{backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '50px 0', borderRadius: '0', height: '300px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px'}}>
+         <h1 className='text-black '><Page0 text={"Experience the Power of Language Learning"}/></h1>
+         </div>
+
+         <div className='text-center' style={{backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '10px 0',width: 'auto', height: '300px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '10px'}}>
+         <h3 className='text-center' style={{color: 'white'}}>Empower yourself with unique tools and resources.</h3>
+         </div>
       </div>
    )
 }
