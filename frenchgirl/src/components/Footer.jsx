@@ -11,7 +11,7 @@ const Footer = () => {
                <div className="row footdiv">
                   <div className="col">
                      <a className="navbar-brand" href="#">
-                        <img src="" alt="foot" width="30" height="24" className="d-inline-block align-text-top" /><strong>The Nigerian French Girl</strong>
+                        <img src="/logo.png" alt="foot" width="30" height="24" className="d-inline-block align-text-top" /><strong>The Nigerian French Girl</strong>
 
                      </a>
                      <p>Innovative language learning merging education and technology for a  brighter future.</p>

@@ -43,17 +43,16 @@ const Page4 = () => {
       <div className='text-center' style={{backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '50px 0', borderRadius: '0', height: '500px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px'}}>
          <h1 className='text-black '><Page0 text={"Features That Enhance Your Learning Experience"}/></h1>
          </div>
-
          <div className='container-fluid mt-2'>
-            <div className='row' style={{height: '300px'}}>
+            <div className='row' style={{height: '300px', marginTop: '20px'}}>
                <div className='col-6'>
                   <h3>Dynamic Learning Modules</h3>
                   <ul>
                      <li>Engaging animated lessons for kids.</li>
                      <li>Comprehensive resources for beginners.</li>
-                     <li>Professional-level materials for advanced learners.</li>
+                     <li>Profressional-level materials for advanced learners.</li>
                   </ul>
-                  <h6>Explore All Features <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                  <h1>Explore All Features <a href="#">==</a></h1>
                </div>
                <div className='col-6'>
                   <img src="/img4.avif" alt="" style={{height: '300px', width: '600px', borderRadius: '20px'}} />
@@ -64,13 +63,13 @@ const Page4 = () => {
                   <img src="/img5.avif" alt="" style={{height: '300px', width: '600px', borderRadius: '20px'}} />
                </div>
                <div className='col-6'>
-                  <h3>Dynamic Learning Modules</h3>
+                  <h3>AI-Powered Tools</h3>
                   <ul>
-                     <li>Engaging animated lessons for kids.</li>
-                     <li>Comprehensive resources for beginners.</li>
-                     <li>Professional-level materials for advanced learners.</li>
+                     <li>Context Translator for personalized learning.</li>
+                     <li>Voice-to-Voice Translation for real conversations.</li>
+                     <li>Progress tracking for both kids and parents.</li>
                   </ul>
-                  <h6>Explore All Features <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                  <h1>Explore All Features <a href="#">==</a></h1>
                </div>
             </div>
             </div>
