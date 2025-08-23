@@ -4,6 +4,7 @@ import Header from './pages/header.jsx';
 import { useNavigate } from "react-router-dom";
 import Page2 from './pages/getin/Page2.jsx';
 import Page3 from './pages/getin/Page3.jsx';
+import Page4 from './pages/getin/page4.jsx';
 
 
 const Midlevel = () => {
@@ -11,6 +12,7 @@ const Midlevel = () => {
    return (
       <div>
          <Header />
+         <Page4 />
          <Page3 />
          <Page2 />
          <div className='container midlevel'>
