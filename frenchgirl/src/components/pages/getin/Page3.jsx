@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import AnimatedCounter from '../../AnimatedCounter';
 
 const Page3 = () => {
    return (
@@ -8,18 +9,17 @@ const Page3 = () => {
             <p className='text-center'>Our impact speaks volumes.</p>
             <div className='row ratediv'>
                <div className='col'>
-                  <h1>10,000+</h1>
+                  <h1><AnimatedCounter end={10000} />+</h1>
                   <p>Students actively engaging with our content.</p>
                </div>
                <div className='col'>
-                  <h1>95%</h1>
+                  <h1><AnimatedCounter end={95} duration={1200} />%</h1>
                   <p>Satisfaction rate among users.</p>
                </div>
             </div>
-
          </div>
       </div>
-   )
+   );
 }
 
 export default Page3;

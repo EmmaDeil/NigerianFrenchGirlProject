@@ -19,7 +19,7 @@ const Header = () => {
                <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                   <div className="carousel-inner">
                      <div className="carousel-item active">
-                        <img src="./character.jpg" className="d-block w-100 img-fluid carousel-img-fade" alt="Header"/>
+                        <img src="./land1.avif" className="d-block w-100 img-fluid carousel-img-fade" alt="Header"/>
                      </div>
                      <div className="carousel-item">
                         <img src="./character.jpg" className="d-block w-100 img-fluid carousel-img-fade" alt="Header"/>
