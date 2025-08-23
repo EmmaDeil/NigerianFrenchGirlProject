@@ -17,15 +17,15 @@ const Users = () => {
                      </div>
                      <div className="modal-body">
                         <form action="" method="post" className="login-form my-3">
-                           <p>Don't have an account yet? <a href="#">Sign Up</a></p>
-                           <div className=''>
-                              <label htmlFor="username">Username:</label><br />
-                              <input type="text" id="username" name="username" placeholder='Enter your username' required />
+                           <p>Don't have an account yet? <a href="#" className="upbtn">Sign Up</a></p>
+                           <div className='mb-2 dform'>
+                              <label htmlFor="username">Email Address:</label><br />
+                              <input type="email" id="username" name="username" placeholder='Enter your email' required />
                            </div>
-                           <div className=''>
+                           <div className='mb-2 dform'>
                               <div className='d-flex justify-content-between'>
-                              <label htmlFor="password">Password:</label><br />
-                              <a href="#">Forgot Password?</a>
+                                 <label htmlFor="password">Password:</label><br />
+                                 <a href="#">Forgot Password?</a>
                               </div>
                               <input type="password" id="password" name="password" placeholder='Enter your password' required />
                            </div>
@@ -33,7 +33,7 @@ const Users = () => {
                               <input type="checkbox" name="rememberMe" id="rememberMe" />
                               <label htmlFor="rememberMe">Remember Me</label>
                            </div><br />
-                           <button type="submit" className="btn btn-primary">Login</button>
+                           <button type="submit" className="btn btn-primary loginbtn">Login</button>
                         </form>
                      </div>
                      <div className="modal-footer">

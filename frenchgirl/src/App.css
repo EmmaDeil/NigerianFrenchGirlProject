@@ -116,7 +116,7 @@
   border-radius: 15px;
   text-align: center;
   color: black;
-  padding: 10px;
+  padding: 40px;
   margin: 0 20px;
   max-width: 400px;
 }
@@ -144,4 +144,50 @@
   max-width: 600px;
 }
 
+.anchor {
+  font-size: xx-large;
+  font-weight: bold;
+}
 
+.loginbtn {
+  width: 100%;
+  border-radius: 15px;
+  color: white;
+  padding: 10px 10px;
+ font-weight: 300px;
+ font-size: medium;
+  text-transform: uppercase;
+}
+
+.dform input {
+  width: 100%;
+  padding: 10px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid lightblue;
+  box-shadow: none;
+}
+
+.dform input:focus {
+  outline: none;
+  border-bottom: 2px solid hsl(236.44,60.82%,38.04%);
+}
+
+.dform a {
+  color: hsl(236.44,60.82%,38.04%);
+  text-decoration: none;
+}
+
+.dform a:hover {
+  text-decoration: underline;
+}
+
+.upbtn {
+  color: hsl(236.44,60.82%,38.04%);
+  text-decoration: none;
+}
+
+.upbtn:hover {
+  text-decoration: underline;
+}
