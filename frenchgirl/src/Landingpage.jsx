@@ -175,18 +175,7 @@ const Landingpage = () => {
             <button className='startedbtn' onClick={() => navigate("/users")}>Get Started Now</button>
          </div>
 
-         {/* <div className='container-fluid'>
-            <div className='row' style={{justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column'}}>
-               <div className='col'>
-               <h1>Join our newsletter</h1>
-               <p>Stay updated with the latest news and offers from us.</p>
-               </div>
-               <div className='col'>
-               <input type="email" placeholder="Enter your email" />
-               <button>Subscribe</button>
-               </div>
-            </div>
-         </div> */}
+         
       </div>
    )
 }

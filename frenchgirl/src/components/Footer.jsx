@@ -66,8 +66,8 @@ const Footer = () => {
                <div className='col'>
                <h5>Join our newsletter</h5>
                <p>Stay updated with the latest news and offers from us.</p>
-               <input type="email" placeholder="Enter your email" required style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc' }}/><br />
-               <button className="btn btn-primary" style={{ marginTop: '5px' }}>Subscribe</button>
+               <input type="email" placeholder="Enter your email" required style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', onFocus: { border: '1px solid #262d9c' } }}/><br />
+               <button className="btn btn-primary" style={{ marginTop: '5px', width: '100%', backgroundColor: '#262d9c' }}>Subscribe</button>
                </div>
                </div>
                <hr />
