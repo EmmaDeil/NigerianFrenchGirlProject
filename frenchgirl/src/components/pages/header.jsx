@@ -22,13 +22,13 @@ const Header = () => {
                         <img src="./land1.avif" className="d-block w-100 img-fluid carousel-img-fade" alt="Header"/>
                      </div>
                      <div className="carousel-item">
-                        <img src="./character.jpg" className="d-block w-100 img-fluid carousel-img-fade" alt="Header"/>
+                        {/* <img src="./character.jpg" className="d-block w-100 img-fluid carousel-img-fade" alt="Header"/> */}
                      </div>
                      <div className="carousel-item">
-                        <img src="./character.jpg" className="d-block w-100 img-fluid carousel-img-fade" alt="Header"/>
+                        {/* <img src="./character.jpg" className="d-block w-100 img-fluid carousel-img-fade" alt="Header"/> */}
                      </div>
                      <div className="carousel-item">
-                        <img src="./character.jpg" className="d-block w-100 img-fluid carousel-img-fade" alt="Header"/>
+                        {/* <img src="./character.jpg" className="d-block w-100 img-fluid carousel-img-fade" alt="Header"/> */}
                      </div>
                   </div>
                   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
