@@ -1,16 +1,24 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
    const navigate = useNavigate();
+   
+   const handleStartLearning = () => {
+      navigate('/users?mode=login');
+   };
+   
+   const handleJoinClub = () => {
+      navigate('/users?mode=signup');
+   };
    return (
       <div className="header-section position-relative">
          <div className='header-text position-absolute top-50 start-50 translate-middle text-center w-100' style={{zIndex:2}}>
             <h1 className='text-white'>Welcome to the French Learning Platform, Where Language Meets Innovation</h1>
             <p className='text-white'>Empowering the Next Generation of French Learners in Nigeria Through Technology and your journey to fluency starts here</p>
             <div className='header-actions mt-5'>
-               <button className='btn btn-dark me-2' onClick={() => navigate("/users")}>Start Learning</button>
-               <button className='btn btn-outline-light' onClick={() => navigate("/users")}>Join The Club</button>
+               <button className='justify-content-end bg-black text-white topbtn me-3' onClick={handleStartLearning}>Start Learning</button>
+               <button className='btn btn-outline-light' onClick={handleJoinClub}>Join The Club</button>
             </div>
          </div>
          <div className='container-fluid'>

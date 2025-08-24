@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, createElement, useMemo, useCallback } from
 import { gsap } from "gsap";
 import "./TextType.css";
 
-const Page0 = ({
+const TextType = ({
   text,
   as: Component = "div",
   typingSpeed = 50,
@@ -178,4 +178,4 @@ const Page0 = ({
   );
 };
 
-export default Page0;
+export default TextType;

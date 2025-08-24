@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from './components/pages/header.jsx';
+import Header from './Header.jsx';
 import { useNavigate } from "react-router-dom";
-import Page0 from './components/pages/getin/Page0.jsx';
-import AnimatedCounter from './components/AnimatedCounter.jsx';
+import TextType from '../Utils/TextType.jsx';
+import AnimatedCounter from '../Utils/AnimatedCounter.jsx';
 
 
 const Landingpage = () => {
@@ -57,7 +57,7 @@ const Landingpage = () => {
 
 
             <div className='text-center' style={{ backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '50px 20px', borderRadius: '0', minHeight: '300px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px' }}>
-               <h1 className='text-black' style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}><Page0 text={"Features That Enhance Your Learning Experience"} /></h1>
+               <h1 className='text-black' style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}><TextType text={"Features That Enhance Your Learning Experience"} /></h1>
             </div>
 
 
@@ -93,7 +93,7 @@ const Landingpage = () => {
             </div>
 
             <div className='text-center' style={{ backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '60px 20px', borderRadius: '0', minHeight: '200px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px' }}>
-               <h1 className='text-black' style={{ fontSize: 'clamp(2rem, 4vw, 5.5rem)', maxWidth: '90%' }}><Page0 text={["Experience the Power of Language Learning", "Empower yourself with unique tools and resources."]} /></h1>
+               <h1 className='text-black' style={{ fontSize: 'clamp(2rem, 4vw, 5.5rem)', maxWidth: '90%' }}><TextType text={["Experience the Power of Language Learning", "Empower yourself with unique tools and resources."]} /></h1>
             </div>
          </div>
 
@@ -162,8 +162,8 @@ const Landingpage = () => {
 
          <div className='container-fluid comment text-white py-5'>
             <h1 className='text-center anchor'>"</h1>
-            <h1 className='text-center'><Page0 text={["Learning French has never been this fun and engaging! My child looks forward to every lesson!"]} /></h1>
-            <h1 className='text-center'><Page0 text={["Amina A, Parent"]} /></h1>
+            <h1 className='text-center'><TextType text={["Learning French has never been this fun and engaging! My child looks forward to every lesson!"]} /></h1>
+            <h1 className='text-center'><TextType text={["Amina A, Parent"]} /></h1>
             {/* <Page0
                text={["Text typing effect", "for your websites", "Happy coding!"]}
                typingSpeed={75}
@@ -221,12 +221,12 @@ const Landingpage = () => {
          </div>
 
          <div className='container-fluid fmblue' style={{ backgroundColor: 'hsl(236.44,60.82%,38.04%)' }}>
-            <h1 className='text-center text-white'><Page0 text="Ready to start Learning French?" /></h1>
-            <h1 className='text-center text-white'><Page0 text="Join the vibrant community today and embrace the future of language education" /></h1>
+            <h1 className='text-center text-white'><TextType text="Ready to start Learning French?" /></h1>
+            <h1 className='text-center text-white'><TextType text="Join the vibrant community today and embrace the future of language education" /></h1>
 
             <button className='startedbtn' onClick={() => navigate("/users")}>Get Started Now</button>
          </div>
-
+               
       </div>
    )
 }

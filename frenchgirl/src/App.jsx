@@ -2,29 +2,37 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg' change the favicon here
 import './App.css'
 import {Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from './Layout/Navbar.jsx'
+import Footer from './Layout/Footer.jsx'
 import Users from './components/pages/users.jsx';
-import Landingpage from './Landingpage.jsx';
-import NotFound from './components/pages/NotFound.jsx';
+import Landingpage from './Layout/Landingpage.jsx';
+import NotFound from './Layout/NotFound.jsx';
 import Careers from './components/pages/Careers.jsx';
 import ContactPage from './components/pages/ContactPage.jsx';
-
-
+import LoginForm from './Forms/LoginForm.jsx';
 
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
-        {/* Example: Home route */}
-        <Route path="/" element={<Landingpage />} />
+        {/* Users route without navbar/footer */}
         <Route path="/users" element={<Users />} />
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<NotFound />} />
+        
+        {/* All other routes with navbar/footer */}
+        <Route path="/*" element={
+          <>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Landingpage />} />
+              <Route path="/login" element={<LoginForm />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <Footer />
+          </>
+        } />
       </Routes>
-      <Footer />
     </>
   )
 }

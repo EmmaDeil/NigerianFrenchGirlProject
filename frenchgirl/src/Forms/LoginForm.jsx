@@ -1,29 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import SignupForm from '../../Forms/SignupForm';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import SignupForm from './SignupForm';
 
-const Users = () => {
-   const navigate = useNavigate();
-   const [searchParams] = useSearchParams();
-   const mode = searchParams.get('mode') || 'login';
-   const [showSignup, setShowSignup] = useState(mode === 'signup');
-
-   useEffect(() => {
-      setShowSignup(mode === 'signup');
-   }, [mode]);
-
-   const handleClose = () => {
-      navigate('/');
-   };
+const LoginForm = () => {
+   const [showModal, setShowModal] = useState(true);
+   const [showSignup, setShowSignup] = useState(false);
 
    return (
-      <div className="min-vh-100 d-flex align-items-center justify-content-center" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
-         <div className="modal-dialog modal-dialog-centered" role="document">
-            <div className="modal-content" style={{ transition: 'all 0.3s' }}>
-               <div className="modal-header bg-black text-white">
-                  <h5 className="modal-title">{showSignup ? 'Sign Up' : 'Login Form'}</h5>
-               </div>
-               <div className="modal-body">
+      <div>
+         {showModal && (
+            <div className="modal show d-block" tabIndex="-1" role="dialog" style={{ background: 'rgba(0,0,0,0.3)', transition: 'background 0.3s' }}>
+               <div className="modal-dialog modal-dialog-centered" role="document">
+                  <div className="modal-content" style={{ transition: 'all 0.3s' }}>
+                     <div className="modal-header bg-black text-white">
+                        <h5 className="modal-title">{showSignup ? 'Sign Up' : 'Login Form'}</h5>
+                     </div>
+                     <div className="modal-body">
                         <div style={{ transition: 'opacity 0.3s' }}>
                            {showSignup ? (
                               <SignupForm onSwitch={() => setShowSignup(false)} />
@@ -50,13 +42,15 @@ const Users = () => {
                            )}
                         </div>
                      </div>
-                  <div className="modal-footer">
-                     <button type="button" className="btn btn-secondary" onClick={handleClose}>Back to Home</button>
+                     <div className="modal-footer">
+                        <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>Close</button>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
+         )}
+      </div>
    );
 };
 
-export default Users;
+export default LoginForm;
