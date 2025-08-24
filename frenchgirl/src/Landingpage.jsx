@@ -10,6 +10,14 @@ const Landingpage = () => {
    return (
       <div>
          <Header />
+         <div className='container-fluid'>
+            <div className='row mt-5'>
+               <div className='col-12'>
+                  <h5 className='text-center'>Trusted by Students and Educators Across Africa.</h5>
+                  <img src="/partners.png" alt="" style={{ width: '100%', height: 'auto', margin: '20px 0' }} />
+               </div>
+            </div>
+         </div>
          <div className='mb-2'>
             <div className='row container-fluid mt-3 g-3'>
                <div className='col-lg-4 col-md-6 col-sm-12'>
