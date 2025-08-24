@@ -62,7 +62,7 @@ const Landingpage = () => {
                         <li><i class="bi bi-caret-right"></i>  Comprehensive resources for beginners.</li>
                         <li><i class="bi bi-caret-right"></i>  Professional-level materials for advanced learners.</li>
                      </ul>
-                     <p style={{ marginBottom: '0', marginTop: '15px' }}>Explore All Features <a href="#"><i className="bi bi-arrow-right"></i></a></p>
+                     <p style={{ marginBottom: '0', marginTop: '15px' }}>Explore All Features <a href="#"><i className="bi bi-arrow-right" style={{fontSize: 'larger', marginLeft: '5px'}}></i></a></p>
                   </div>
                   <div className='col-6'>
                      <img src="/img4.avif" alt="" style={{ height: '300px', width: '600px', borderRadius: '20px' }} />
@@ -79,17 +79,13 @@ const Landingpage = () => {
                         <li><i className="bi bi-caret-right"></i>  Voice-to-Voice Translation for real conversations.</li>
                         <li><i className="bi bi-caret-right"></i>  Progress tracking for both kids and parents.</li>
                      </ul>
-                     <p style={{ marginBottom: '0', marginTop: '15px' }}>Explore All Features <a href="#"><i className="bi bi-arrow-right"></i></a></p>
+                     <p style={{ marginBottom: '0', marginTop: '15px' }}>Explore All Features <a href="#"><i className="bi bi-arrow-right" style={{fontSize: 'larger', marginLeft: '5px'}}></i></a></p>
                   </div>
                </div>
             </div>
 
-            <div className='text-center' style={{ backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '50px 0', borderRadius: '0', height: '300px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px' }}>
-               <h1 className='text-black '><Page0 text={"Experience the Power of Language Learning"} /></h1>
-            </div>
-
-            <div className='text-center' style={{ backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '10px 0', width: 'auto', height: '300px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '10px' }}>
-               <h3 className='text-center' style={{ color: 'white' }}>Empower yourself with unique tools and resources.</h3>
+            <div className='text-center' style={{ backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '50px 0', borderRadius: '0', height: 'auto', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px' }}>
+               <h1 className='text-black' style={{ fontSize: '5.5rem', width: '50%' }}><Page0 text={["Experience the Power of Language Learning", "Empower yourself with unique tools and resources."]} /></h1>
             </div>
          </div>
 
@@ -110,8 +106,8 @@ const Landingpage = () => {
 
          <div className='container-fluid comment text-white py-5'>
             <h1 className='text-center anchor'>"</h1>
-            <h1 className='text-center'><Page0 text="Learning French has never been this fun and engaging! My child looks forward to every lesson!" /></h1>
-            <h1 className='text-center'><Page0 text="Amina A, Parent" /></h1>
+            <h1 className='text-center'><Page0 text={["Learning French has never been this fun and engaging! My child looks forward to every lesson!"]} /></h1>
+            <h1 className='text-center'><Page0 text={["Amina A, Parent"]} /></h1>
             {/* <Page0
                text={["Text typing effect", "for your websites", "Happy coding!"]}
                typingSpeed={75}
@@ -175,7 +171,6 @@ const Landingpage = () => {
             <button className='startedbtn' onClick={() => navigate("/users")}>Get Started Now</button>
          </div>
 
-         
       </div>
    )
 }

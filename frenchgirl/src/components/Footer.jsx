@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
    const currentYear = new Date().getFullYear();
+   const [showSocialDropdown, setShowSocialDropdown] = useState(false);
 
    return (
       <div>
@@ -20,16 +22,16 @@ const Footer = () => {
                      <h5>Learn More</h5>
                      <ul className="other-links">
                         <li>
-                           <a href="#">Home</a>
+                           <Link to="/">Home</Link>
                         </li>
                         <li>
-                           <a href="#">Learn French</a>
+                           <Link to="/learn-french">Learn French</Link>
                         </li>
                         <li>
-                           <a href="#">About Us</a>
+                           <Link to="/about">About Us</Link>
                         </li>
                         <li>
-                           <a href="#">Careers</a>
+                           <Link to="/careers">Careers</Link>
                         </li>
                      </ul>
                   </div>
@@ -37,14 +39,29 @@ const Footer = () => {
                      <h5>Engage With us</h5>
                      {/* <p>Stay connected through our social media channels.</p> */}
                      <ul className="social-media-links">
-                        <li>
-                           <a href="#">Social Media</a>
+                        <li className="dropdown">
+                           <button 
+                              className="btn btn-link p-0 text-start" 
+                              onClick={() => setShowSocialDropdown(!showSocialDropdown)}
+                              style={{color: 'inherit', textDecoration: 'none'}}
+                           >
+                              Social Media <i className={`bi bi-chevron-${showSocialDropdown ? 'up' : 'down'}`}></i>
+                           </button>
+                           {showSocialDropdown && (
+                              <ul className="dropdown-menu show position-static mt-2" style={{backgroundColor: 'transparent', border: 'none'}}>
+                                 <li><a href="https://facebook.com/nigerifrenchgirl" target="_blank" rel="noopener noreferrer" className="dropdown-item">Facebook</a></li>
+                                 <li><a href="https://twitter.com/nigerifrenchgirl" target="_blank" rel="noopener noreferrer" className="dropdown-item">Twitter</a></li>
+                                 <li><a href="https://instagram.com/nigerifrenchgirl" target="_blank" rel="noopener noreferrer" className="dropdown-item">Instagram</a></li>
+                                 <li><a href="https://youtube.com/nigerifrenchgirl" target="_blank" rel="noopener noreferrer" className="dropdown-item">YouTube</a></li>
+                                 <li><a href="https://linkedin.com/company/nigerifrenchgirl" target="_blank" rel="noopener noreferrer" className="dropdown-item">LinkedIn</a></li>
+                              </ul>
+                           )}
                         </li>
                         <li>
-                           <a href="#">Contact Us</a>
+                           <Link to="/contact">Contact Us</Link>
                         </li>
                         <li>
-                           <a href="#">Collaborate</a>
+                           <Link to="/collaborate">Collaborate</Link>
                         </li>
                      </ul>
                   </div>
