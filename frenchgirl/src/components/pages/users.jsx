@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import SignupForm from '../../Forms/SignupForm';
+import LoginForm from '../../Forms/LoginForm';
 
 const Users = () => {
    const navigate = useNavigate();
@@ -28,25 +29,7 @@ const Users = () => {
                            {showSignup ? (
                               <SignupForm onSwitch={() => setShowSignup(false)} />
                            ) : (
-                              <form action="" method="post" className="login-form my-3">
-                                 <p>Don't have an account yet? <button type="button" className="btn btn-link upbtn p-0" onClick={() => setShowSignup(true)}>Sign Up</button></p>
-                                 <div className='mb-2 dform'>
-                                    <label htmlFor="username">Email Address:</label><br />
-                                    <input type="email" id="username" name="username" placeholder='Enter your email' required />
-                                 </div>
-                                 <div className='mb-2 dform'>
-                                    <div className='d-flex justify-content-between'>
-                                       <label htmlFor="password">Password:</label><br />
-                                       <a href="#">Forgot Password?</a>
-                                    </div>
-                                    <input type="password" id="password" name="password" placeholder='Enter your password' required />
-                                 </div>
-                                 <div className='d-flex align-items-center'>
-                                    <input type="checkbox" name="rememberMe" id="rememberMe" />
-                                    <label htmlFor="rememberMe">Remember Me</label>
-                                 </div><br />
-                                 <button type="submit" className="btn btn-primary loginbtn">Login</button>
-                              </form>
+                              <LoginForm onSwitch={() => setShowSignup(true)} />
                            )}
                         </div>
                      </div>
