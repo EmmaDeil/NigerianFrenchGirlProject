@@ -10,6 +10,7 @@ import NotFound from './Layout/NotFound.jsx';
 import Careers from './components/pages/Careers.jsx';
 import ContactPage from './components/pages/ContactPage.jsx';
 import LoginForm from './Forms/LoginForm.jsx';
+import PageTitle from "./Utils/PageTitle.jsx"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         {/* All other routes with navbar/footer */}
         <Route path="/*" element={
           <>
+          <PageTitle defaultTitle="The Nigerian French Girl" />
             <Navbar />
             <Routes>
               <Route path="/" element={<Landingpage />} />
