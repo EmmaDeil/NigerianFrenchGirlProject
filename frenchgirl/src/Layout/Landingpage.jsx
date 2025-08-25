@@ -13,7 +13,7 @@ const Landingpage = () => {
          <div className='container-fluid'>
             <div className='row mt-5'>
                <div className='col-12'>
-                  <h5 className='text-center'>Trusted by Students and Educators Across Africa.</h5>
+                  <h5 className='text-center' style={{color: 'black', marginTop: '20px', fontSize: '1.9rem'}}>Trusted by Students and Educators Across Africa.</h5>
                   <img src="/partners.png" alt="" style={{ width: '100%', height: 'auto', margin: '20px 0' }} />
                </div>
             </div>
