@@ -11,11 +11,11 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='text-center mt-2 mb-2'>
+      <div className='text-start mt-2 mb-2' style={{backgroundColor: 'blue', textTransform: 'uppercase'}}>
         <RotatingText 
-          texts={['React', 'Bits', 'Is', 'Cool!']} 
+          texts={['This a a great place to start your french learning journey', 'Never doubt yourself, because you are Exceptional', 'A great way to show your skills and get certified', 'We make french learning easy']} 
           rotationInterval={2000}
-          className="fw-bold text-primary"
+          className="fw-bold text-white"
         />
       </div>
       <nav className="navbar bg-body-tertiary">
