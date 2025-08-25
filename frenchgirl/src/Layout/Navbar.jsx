@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='text-start mt-2 mb-2' style={{backgroundColor: 'blue', textTransform: 'uppercase'}}>
+      <div className='text-end mt-2 mb-2' style={{background: 'linear-gradient(135deg, darkblue 30%, white 100%)', textTransform: 'uppercase'}}>
         <RotatingText 
           texts={['This a a great place to start your french learning journey', 'Never doubt yourself, because you are Exceptional', 'A great way to show your skills and get certified', 'We make french learning easy']} 
           rotationInterval={2000}
@@ -35,7 +35,7 @@ const Navbar = () => {
               <Link className="nav-link" to="/community">Community</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link disabled" aria-disabled="true">Disabled</Link>
+              <Link className="nav-link disabled" to="/resources">Resources</Link>
             </li>
           </ul>
           <button className='justify-content-end bg-black text-white topbtn py-2 px-3' onClick={() => setShowModal(true)}>Start Learning</button>

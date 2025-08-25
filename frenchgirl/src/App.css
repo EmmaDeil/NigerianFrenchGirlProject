@@ -97,14 +97,14 @@
 }
 
 .fmblue {
-  background-color: hsl(236.44,60.82%,38.04%);
+  background: linear-gradient(135deg, darkblue 30%, white 100%);
   text-align: center;
   padding: 70px;
   border-radius: 9px;
 }
 
 .comment {
-  background-color: hsl(236.44,60.82%,38.04%);
+  background: linear-gradient(135deg, darkblue 30%, white 100%);
   border-radius: 10px;
   padding: 20px;
   margin: 10px 0;
@@ -171,7 +171,8 @@
 
 .dform input:focus {
   outline: none;
-  border-bottom: 2px solid hsl(236.44,60.82%,38.04%);
+  border-bottom: 2px solid transparent;
+  background: linear-gradient(135deg, darkblue 30%, white 100%);
 }
 
 .dform a {

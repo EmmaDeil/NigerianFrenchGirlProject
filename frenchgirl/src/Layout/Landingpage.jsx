@@ -56,7 +56,7 @@ const Landingpage = () => {
             </div>
 
 
-            <div className='text-center' style={{ backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '50px 20px', borderRadius: '0', minHeight: '300px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px' }}>
+            <div className='text-center' style={{background: 'linear-gradient(135deg, darkblue 30%, white 100%)', padding: '50px 20px', borderRadius: '0', minHeight: '300px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px' }}>
                <h1 className='text-black' style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}><TextType text={"Features That Enhance Your Learning Experience"} /></h1>
             </div>
 
@@ -92,7 +92,7 @@ const Landingpage = () => {
                </div>
             </div>
 
-            <div className='text-center' style={{ backgroundColor: 'hsl(236.44,60.82%,38.04%)', padding: '60px 20px', borderRadius: '0', minHeight: '200px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px' }}>
+            <div className='text-center' style={{ background: 'linear-gradient(135deg, darkblue 30%, white 100%)', padding: '60px 20px', borderRadius: '0', minHeight: '200px', justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '50px' }}>
                <h1 className='text-black' style={{ fontSize: 'clamp(2rem, 4vw, 5.5rem)', maxWidth: '90%' }}><TextType text={["Experience the Power of Language Learning", "Empower yourself with unique tools and resources."]} /></h1>
             </div>
          </div>
