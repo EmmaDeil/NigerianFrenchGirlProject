@@ -227,6 +227,49 @@ const Landingpage = () => {
             <button className='startedbtn' onClick={() => navigate("/users")}>Get Started Now</button>
          </div>
                
+         <div style={{ height: 'auto'}}>
+         <div className='container text-center mt-5'>
+            <h1 style={{ lineHeight: '50px', color: 'hsl(236.44,60.82%,38.04%)' }}>Affordable Learning Plans</h1>
+            <h6>Choose the perfect plan for your learning journey.</h6>
+            </div>
+            <div>
+               <div className='text-center mt-4'>
+                  <button className='planbtn' onClick={() => navigate("/community")}>View Plans</button>
+               </div>
+            </div>
+         </div>
+            <div className='row container-fluid mt-3 g-3'>
+               <div className='col-md-4'>
+                  <div className='card'>
+                     <div className='card-body'>
+                        <h5 className='card-title'>Basic Plan</h5>
+                        <h4 className='card-text'>N9.99/month</h4>
+                        <p className='card-text'>Access to basic courses and materials.</p>
+                        <button className='btn btn-outline-primary' onClick={() => navigate("/users")}>Choose Plan</button>
+                     </div>
+                  </div>
+               </div>
+               <div className='col-md-4'>
+                  <div className='card'>
+                     <div className='card-body'>
+                        <h5 className='card-title'>Standard Plan</h5>
+                        <h4 className='card-text'>N19.99/month</h4>
+                        <p className='card-text'>Access to all courses and materials.</p>
+                        <button className='btn btn-primary' onClick={() => navigate("/users")}>Choose Plan</button>
+                     </div>
+                  </div>
+               </div>
+               <div className='col-md-4'>
+                  <div className='card'>
+                     <div className='card-body'>
+                        <h5 className='card-title'>Premium Plan</h5>
+                        <h4 className='card-text'>N29.99/month</h4>
+                        <p className='card-text'>Access to all courses, materials, and personalized support.</p>
+                        <button className='btn btn-secondary' onClick={() => navigate("/users")}>Choose Plan</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
       </div>
    )
 }
