@@ -15,7 +15,21 @@ const Navbar = () => {
             <img src="vite.svg" alt="Logo" width="30" height="24" className="d-inline-block align-text-top" />
             The Nigerian French Girl
           </Link>
-        <button className='justify-content-end bg-black text-white topbtn' onClick={() => setShowModal(true)}>Start Learning</button>
+          <ul className="nav justify-content-center">
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="/about">About Us</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/library">Library</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/community">Community</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link disabled" aria-disabled="true">Disabled</Link>
+            </li>
+          </ul>
+          <button className='justify-content-end bg-black text-white topbtn' onClick={() => setShowModal(true)}>Start Learning</button>
         </div>
       </nav>
       {showModal && <LoginForm onClose={() => setShowModal(false)} />}
