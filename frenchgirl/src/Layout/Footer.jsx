@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { BookOpen, Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
 
@@ -8,7 +9,7 @@ const Footer = () => {
 
    return (
       <div>
-         <footer>
+         <footer style={{ backgroundColor: '#1d4fd7', padding: '40px 0', marginTop: '20px', color: 'white' }}>
             <div className="container-fluid">
                <div className="row footdiv">
                   <div className="col">
@@ -81,6 +82,21 @@ const Footer = () => {
                      </ul>
                   </div>
                <div className='col'>
+            <h4 className="font-semibold mb-4 text-lg">Contact</h4>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3 mb-2">
+                <Mail className="w-5 h-5 text-white/80" />
+                <span className="text-white/80"> hello@frenchflow.com</span>
+              </div>
+              <div className="flex items-center space-x-3 mb-2">
+                <Phone className="w-5 h-5 text-white/80" />
+                <span className="text-white/80"> +234 800 123 4567</span>
+              </div>
+              <div className="flex items-center space-x-3 mb-2">
+                <MapPin className="w-5 h-5 text-white/80" />
+                <span className="text-white/80"> Lagos, Nigeria</span>
+              </div>
+            </div>
                <h5>Join our newsletter</h5>
                <p>Stay updated with the latest news and offers from us.</p>
                <input type="email" placeholder="Enter your email" required style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', onFocus: { border: '1px solid #262d9c' } }}/><br />
