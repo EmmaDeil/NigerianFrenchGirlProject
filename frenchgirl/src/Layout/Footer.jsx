@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BookOpen, Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Button } from "../components/ui/button";
 
 const Footer = () => {
 
@@ -18,6 +19,20 @@ const Footer = () => {
 
                      </a>
                      <p>Innovative language learning merging education and technology for a  brighter future.</p>
+                     <div className="flex space-x-4">
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+                <Facebook className="w-5 h-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+                <Instagram className="w-5 h-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+                <Twitter className="w-5 h-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+                <Youtube className="w-5 h-5" />
+              </Button>
+            </div>
                   </div>
                   <div className="col">
                      <h5>Learn More</h5>
@@ -67,7 +82,7 @@ const Footer = () => {
                      </ul>
                   </div>
                   <div className="col">
-                     <h5>Support</h5>
+                     {/* <h5>Support</h5>
                      <ul className="other-links">
                         <li><a href="#">FAQs</a></li>
                         <li>
@@ -79,7 +94,16 @@ const Footer = () => {
                         <li>
                            <a href="#">Privacy Policy</a>
                         </li>
-                     </ul>
+                     </ul> */}
+                     <h4 className="font-semibold mb-4 text-lg">Resources</h4>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-white/80 hover:text-white transition-smooth">Learning Blog</a></li>
+              <li><a href="#" className="text-white/80 hover:text-white transition-smooth">French Grammar Guide</a></li>
+              <li><a href="#" className="text-white/80 hover:text-white transition-smooth">Vocabulary Builder</a></li>
+              <li><a href="#" className="text-white/80 hover:text-white transition-smooth">Pronunciation Guide</a></li>
+              <li><a href="#" className="text-white/80 hover:text-white transition-smooth">Cultural Guide</a></li>
+              <li><a href="#" className="text-white/80 hover:text-white transition-smooth">Success Stories</a></li>
+            </ul>
                   </div>
                <div className='col'>
             <h4 className="font-semibold mb-4 text-lg">Contact</h4>

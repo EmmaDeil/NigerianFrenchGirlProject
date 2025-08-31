@@ -3,6 +3,7 @@ import Header from './Header.jsx';
 import { useNavigate } from "react-router-dom";
 import TextType from '../Utils/TextType.jsx';
 import AnimatedCounter from '../Utils/AnimatedCounter.jsx';
+import FlipCards from '../Utils/FlipCards.jsx';
 
 
 const Landingpage = () => {
@@ -270,6 +271,7 @@ const Landingpage = () => {
                   </div>
                </div>
             </div>
+            <FlipCards />
       </div>
    )
 }
